@@ -133,4 +133,21 @@ function findMaxMark(marks) {
 // }
 
 
+// function Employee(name, performance){
+//   this.name = name;
+//   this.performance = performance;
+
+//   this.average = function(){
+    
+//     var sum = 0;
+//     for(var i = 0; i < this.performance.length; i++){
+//       sum += performance[i]; 
+//        }
+//     return sum / performance.length;
+
+//   }
+// }
+
+// var employees = new [];
+
 
