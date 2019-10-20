@@ -81,6 +81,7 @@ function bestPerformance (num) {
   var marks = marksAndEmployees.marks;
   var employees = marksAndEmployees.employees;
   var bestPerformance = findMaxMark(marks);
+  decision (marks, employees);
   document.getElementById("bestPerformance").innerHTML += bestPerformance.bestMark;
   document.getElementById("bestPerformanceMember").innerHTML += employees[bestPerformance.index];
   return {bestMark:bestPerformance, bestPerformer:bestPerformanceMember};
@@ -97,6 +98,25 @@ function findMaxMark(marks) {
   }
   return {bestMark:bestPerformance, index:bestPerformanceIndex};
 }
+
+function decision (marks, employees) {
+  var emploee;
+  for (var i = 0; i < marks.length; i++) {
+    if (marks[i] >= 90) {
+      emploee = employees[i];
+      document.getElementById("decision").innerHTML += emploee + " is eligible for increment" + "</br>";
+    } 
+    else if (marks[i] >= 70) {
+      emploee = employees[i];
+      document.getElementById("decision").innerHTML += emploee + " is eligible to continue in project team" + "</br>";
+    }
+    else {
+      emploee = employees[i];
+      document.getElementById("decision").innerHTML += emploee + ", change designation" + "</br>";
+    }
+}
+}
+
 //console.log(averageMarksAllProjects);
 
 
