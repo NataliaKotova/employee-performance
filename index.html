@@ -11,11 +11,27 @@
     <title>Hello, world!</title>
   </head>
   <body>
-
-      <div>
-        <span>Team members:</span>
-        <span id="teamMembers"></span>
+      <h1 class="display-4 text-center">Employees' performance</h1>
+    
+      <div class="container jumbotron">
+      <span class="mb-1">Please enter amount of team members below (from 1 to 4):</span>
+      <div class="input-group mb-3">
+          <input id="teamMembers" type="text" class="form-control" >
+          <div class="input-group-append">
+            <button id="generateForm" class="btn btn-outline-secondary" type="button">Generate form to enter data</button>
+          </div>
       </div>
+    
+      <form >
+        <div id="form" class="row"></div>
+      </form>
+      
+      <div id="getResults" class="float-right m-4"></div>
+
+      <div id="result"></div>
+
+
+
       <div>
           <span>Performance of team members in project 1:</span>
           <span id="project1Performance"></span>
@@ -44,9 +60,10 @@
       <span>Decision:</span>
       <span id="decision"></span>
     </div>
+  </div>
       <!-- <input type="submit" value="Submit" onclick="doJobPrint()"/> -->
       
-      <div>
+      <!-- <div>
           <h1>Algorithm</h1>
           <ol>
             <li>Get input from user for the number (n) of employees.</li>
@@ -69,7 +86,7 @@
             Write an algorithm for the above scenario.
             Algorithm means writing step by step procedure to solve a problem
           </p>
-        </div>   
+        </div>    -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
